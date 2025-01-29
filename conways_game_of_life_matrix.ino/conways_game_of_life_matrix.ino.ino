@@ -3,7 +3,7 @@
 #define LED_PIN_0    3
 #define COLOR_ORDER  RGB
 #define CHIPSET      WS2811
-#define BRIGHTNESS   4
+#define BRIGHTNESS   3
 
 const uint8_t kMatrixWidth = 16;
 const uint8_t kMatrixHeight = 16;
@@ -14,10 +14,10 @@ const uint16_t nLEDs = kMatrixWidth * kMatrixHeight;
 boolean grid[kMatrixHeight][kMatrixWidth];
 boolean temp[kMatrixHeight][kMatrixWidth];
 
-uint32_t frameDelay = 75;
+uint32_t frameDelay = 120;
 uint32_t interpFrames = 8;
 uint32_t interpCounter = interpFrames;
-uint32_t nFrames = 120;
+uint32_t nFrames = 100;
 uint32_t frameCounter = nFrames;
 
 CRGB cBlack = CRGB(0, 0, 0);
